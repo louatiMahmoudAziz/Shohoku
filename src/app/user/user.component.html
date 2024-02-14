@@ -1,0 +1,83 @@
+<main id="main">
+    <section id="dark-mode-section" class="section">
+        <div class="mode-buttons">
+          <button class="mode-button light-mode" (click)="toggleDarkMode(false)">
+            <img src="https://cdn0.iconfinder.com/data/icons/small-nature/50/3_Sep-11-512.png" alt="Sun Icon" class="mode-icon">
+            Light Mode
+          </button>
+          <button class="mode-button dark-mode" (click)="toggleDarkMode(true)">
+            <img src="data:image/png;base64,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" alt="Moon Icon" class="mode-icon">
+            Dark Mode
+          </button>
+        </div>
+    </section>
+      
+      
+
+    <section id="protagonist-section" class="section" [ngStyle]="{ 'background-color': darkMode ? '#333333' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <h1>{{ user.name }}</h1>
+      <p>Age: {{ user.age }}</p>
+      <p>Dream: MVP</p>
+      <img [src]="user.ImgUrl" alt="Genius Sakuragi">
+    </section>
+  
+    <section id="team-section" class="section" [ngStyle]="{ 'background-color': darkMode ? '#333333' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <h1 class="team-heading">Shohoku team:</h1>
+      <div class="player-container" *ngFor="let player of players">
+        <ng-container *ngIf="player.team == 'Shohoku'">
+          <h2>{{ player.name }}</h2>
+          <p>Player number: {{ player.number }}</p>
+          <p>Player position: {{ player.post }}</p>
+        </ng-container>
+      </div>
+    </section>
+  
+    <section id="user-input-section" class="section" [ngStyle]="{ 'background-color': darkMode ? '#333333' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <h2>Fans support!</h2>
+      <input type="text" [(ngModel)]="team" [ngStyle]="{ 'background-color': darkMode ? '#666666' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <p>{{ team }}!</p>
+    </section>
+  
+    <section id="score-quiz-section" class="section" [ngStyle]="{ 'background-color': darkMode ? '#333333' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <h2>Who is going for the score?</h2>
+      <label for="sakuragi">Sakuragi</label>
+      <input type="radio" id="sakuragi" value="sakuragi" name="score" (change)="updateIsScoring('Sakuragi')">
+      <label for="Akagi">Akagi</label>
+      <input type="radio" id="Akagi" value="Akagi" name="score" (change)="updateIsScoring('Akagi')">
+      <label for="Rukawa">Rukawa</label>
+      <input type="radio" id="Rukawa" value="Rukawa" name="score" (change)="updateIsScoring('Rukawa')">
+  
+      <div [ngSwitch]="isScoring">
+        <div *ngSwitchCase="'Akagi'">
+          <p>Gorilla dunk</p>
+          <img src="https://cdn.donmai.us/original/cd/16/cd16d2cb029d1b132118e0f9d6e40c5a.jpg" alt="gorilla dunk">
+        </div>
+        <div *ngSwitchCase="'Sakuragi'">
+          <p>Slam dunk</p>
+          <img src="https://thejapanhobbyist.files.wordpress.com/2017/01/slam-dunk-sakuragi-hanamichi-4.jpg" alt="slam dunk">   
+        </div>
+        <div *ngSwitchCase="'Rukawa'">
+          <p>Jump shot</p>
+          <img src="https://i.ytimg.com/vi/kiCGDJqngg8/hqdefault.jpg" alt="Jump shot">
+        </div>
+      </div>
+    </section>
+  
+    <section id="is-mitsi-playing-section" class="section" [ngStyle]="{ 'background-color': darkMode ? '#333333' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <h2>Is Mitsi Playing?</h2>
+      <label class="special-label">
+        <button class="button special-button" (click)="display = !display">Three pointers!</button>
+        Is Mitsi San playing?
+        <img *ngIf="display" [src]="Img2" alt="Junior MVP" class="player-image">
+      </label>
+      
+  
+      <input type="checkbox" id="yescheckbox" (change)="updateIsPlaying(true)" [ngStyle]="{ 'background-color': darkMode ? '#666666' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <label for="yescheckbox" class="checkbox-label" [ngStyle]="{ 'color': darkMode ? '#ffffff' : '#333333' }">Yes</label>
+  
+      <input type="checkbox" id="nocheckbox" (change)="updateIsPlaying(false)" [ngStyle]="{ 'background-color': darkMode ? '#666666' : '#ffffff', 'color': darkMode ? '#ffffff' : '#333333' }">
+      <label for="nocheckbox" class="checkbox-label" [ngStyle]="{ 'color': darkMode ? '#ffffff' : '#333333' }">No</label>
+  
+      <p *ngIf="isPlaying === true" class="win-message">Shohoku wins!</p>
+    </section>
+</main>

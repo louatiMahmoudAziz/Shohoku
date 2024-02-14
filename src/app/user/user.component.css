@@ -1,0 +1,145 @@
+/* Default Light Mode styles */
+.section {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #ca1010;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mode-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mode-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #333;
+  }
+  
+  .mode-button:focus {
+    outline: none;
+  }
+  
+  .mode-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .special-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .special-button {
+    background-color: #ca1010;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .special-button:hover {
+    background-color: #af0e0e;
+  }
+  
+  .player-image {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    width: 120px;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .win-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ca1010;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Dark Mode styles */
+  .dark-mode .section {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .dark-mode h1 {
+    color: #ffcc00; /* Yellow color for headings */
+  }
+  
+  .dark-mode button {
+    background-color: #ffcc00; /* Yellow button background */
+  }
+  
+  .dark-mode label {
+    color: #ffffff; /* White text color for labels */
+  }
+  
